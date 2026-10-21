@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://robertoastra.github.io/i-recognize-you/sitemap.xml
