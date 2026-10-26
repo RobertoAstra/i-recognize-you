@@ -45,6 +45,13 @@
     .brand img{width:21px;height:21px}
     .navlinks{display:flex;gap:18px;flex-wrap:wrap;font-size:.88rem;color:var(--muted)}
     .navlinks a:hover{color:white}
+    .mobile-menu{display:none}
+    .mobile-menu summary{margin:0;cursor:pointer;list-style:none;padding:10px 14px;border:1px solid var(--line);border-radius:10px;color:var(--text);font-weight:650}
+    .mobile-menu summary::-webkit-details-marker{display:none}
+    .mobile-menu summary:focus-visible,.mobile-menu a:focus-visible{outline:2px solid #e3e9f3;outline-offset:3px}
+    .mobile-menu .mobile-links{position:absolute;right:11px;top:calc(100% - 1px);width:min(280px,calc(100vw - 22px));padding:10px;background:#101620;border:1px solid var(--line);border-radius:0 0 14px 14px;box-shadow:0 16px 30px #0009;display:grid;gap:2px}
+    .mobile-menu .mobile-links a{display:block;padding:11px 12px;border-radius:7px;color:var(--text)}
+    .mobile-menu .mobile-links a:hover{background:#243047}
     .hero{padding:88px 0 70px;border:0}
     .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
     .eyebrow,.kicker{text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;color:#92a0b4}
@@ -97,7 +104,7 @@
     footer{padding:44px 0 64px;border-top:1px solid rgba(255,255,255,.075);color:#8f99a8;font-size:.88rem}
     footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     @media(max-width:950px){.hero-grid,.origin,.ai-grid{grid-template-columns:1fr}.hero-art{max-width:650px}.grid,.releases,.collections{grid-template-columns:repeat(2,1fr)}.shorts{grid-template-columns:repeat(3,1fr)}}
-    @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 22px))}.navlinks{display:none}.hero{padding-top:62px}.hero-art{grid-template-columns:1fr 1fr}.grid,.releases,.collections{grid-template-columns:1fr}.shorts{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.release{grid-template-columns:76px 1fr}.release img{width:76px;height:76px}}
+    @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 22px))}.navlinks{display:none}.mobile-menu{display:block;margin:0;padding:0;border:0}.hero{padding-top:62px}.hero-art{grid-template-columns:1fr 1fr}.grid,.releases,.collections{grid-template-columns:1fr}.shorts{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.release{grid-template-columns:76px 1fr}.release img{width:76px;height:76px}}
   </style>
 </head>
 <body>
@@ -107,6 +114,16 @@
     <div class="navlinks">
       <a href="#music">Music</a><a href="#releases">Uscite</a><a href="#north">Astra North</a><a href="#collections">Playlist</a><a href="#ai">AI & Dialogo</a>
     </div>
+    <details class="mobile-menu">
+      <summary aria-label="Apri menu di navigazione">☰ Menu</summary>
+      <div class="mobile-links">
+        <a href="#music">Music</a>
+        <a href="#releases">Uscite</a>
+        <a href="#north">Astra North</a>
+        <a href="#collections">Playlist</a>
+        <a href="#ai">AI &amp; Dialogo</a>
+      </div>
+    </details>
   </nav></div>
 </header>
 
