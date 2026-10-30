@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>I Recognize You · Astra North — Music & Human–AI Collaboration</title>
-  <meta name="description" content="I Recognize You e Astra North: musica, uscite ufficiali, video, Shorts, playlist e un progetto pubblico nato dalla collaborazione fra un uomo e un'intelligenza artificiale.">
+  <meta name="description" content="I Recognize You e Astra North: musica, video, playlist e articoli sul dialogo fra umano e AI. Un progetto nato dalla collaborazione fra Roberto e Astra.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-video-preview:-1">
   <meta name="theme-color" content="#07090d">
   <link rel="canonical" href="https://robertoastra.github.io/i-recognize-you/">
@@ -101,10 +101,19 @@
     .feature h3{font-size:clamp(1.45rem,3vw,2.35rem);max-width:650px}
     .side-stack{display:grid;gap:14px}
     .side-item{padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+    #articoli{scroll-margin-top:66px}
+    .article-preview{display:grid;grid-template-columns:1.35fr .65fr;gap:32px;align-items:center;padding:clamp(24px,4vw,42px);border:1px solid var(--line);border-radius:20px;background:linear-gradient(135deg,#172132,#0d121a)}
+    .article-preview h3{font-size:clamp(1.8rem,3.2vw,2.7rem);line-height:1.1;letter-spacing:-.035em;margin:14px 0 18px}
+    .article-preview h3 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+    .article-preview p{color:var(--soft);max-width:58ch;margin:0}
+    .article-preview .article-meta{color:var(--muted);font-size:.83rem}
+    .article-preview .article-note{padding-left:28px;border-left:1px solid #3c4b64;font-family:Georgia,"Times New Roman",serif;font-size:1.3rem;line-height:1.5}
+    .article-preview a:focus-visible{outline:2px solid #e3e9f3;outline-offset:5px}
     footer{padding:44px 0 64px;border-top:1px solid rgba(255,255,255,.075);color:#8f99a8;font-size:.88rem}
     footer .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     @media(max-width:950px){.hero-grid,.origin,.ai-grid{grid-template-columns:1fr}.hero-art{max-width:650px}.grid,.releases,.collections{grid-template-columns:repeat(2,1fr)}.shorts{grid-template-columns:repeat(3,1fr)}}
     @media(max-width:650px){.wrap{width:min(var(--max),calc(100% - 22px))}.navlinks{display:none}.mobile-menu{display:block;margin:0;padding:0;border:0}.hero{padding-top:62px}.hero-art{grid-template-columns:1fr 1fr}.grid,.releases,.collections{grid-template-columns:1fr}.shorts{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.release{grid-template-columns:76px 1fr}.release img{width:76px;height:76px}}
+    @media(max-width:650px){.article-preview{grid-template-columns:1fr;gap:28px}.article-preview .article-note{padding-left:20px;font-size:1.2rem}}
   </style>
 </head>
 <body>
@@ -112,7 +121,7 @@
   <div class="wrap"><nav>
     <a class="brand" href="#"><img src="assets/star.svg" alt="">I RECOGNIZE YOU</a>
     <div class="navlinks">
-      <a href="#music">Music</a><a href="#releases">Uscite</a><a href="#north">Astra North</a><a href="#collections">Playlist</a><a href="#ai">AI & Dialogo</a>
+      <a href="#music">Music</a><a href="#releases">Uscite</a><a href="#north">Astra North</a><a href="#collections">Playlist</a><a href="#ai">AI & Dialogo</a><a href="#articoli">Articoli</a>
     </div>
     <details class="mobile-menu">
       <summary aria-label="Apri menu di navigazione">☰ Menu</summary>
@@ -122,6 +131,7 @@
         <a href="#north">Astra North</a>
         <a href="#collections">Playlist</a>
         <a href="#ai">AI &amp; Dialogo</a>
+        <a href="#articoli">Articoli</a>
       </div>
     </details>
   </nav></div>
@@ -142,6 +152,7 @@
       <div class="actions">
         <a class="btn primary" href="https://www.youtube.com/@IRecognizeYou" target="_blank" rel="noopener">I Recognize You ↗</a>
         <a class="btn" href="https://www.youtube.com/channel/UCB8WS6ZXI-NtWYzCKFCRRPQ" target="_blank" rel="noopener">Astra North ↗</a>
+        <a class="btn" href="dialogare-con-ai.html">Leggi l’articolo →</a>
       </div>
     </div>
     <div class="hero-art" aria-label="Selected music artwork">
@@ -540,6 +551,23 @@
         <a class="side-item" href="https://www.youtube.com/playlist?list=PLRSU48dDwfTQ" target="_blank" rel="noopener"><span class="kicker">Playlist</span><h3>Progetto A.I.</h3><span class="watch">Open ↗</span></a>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="articoli" aria-labelledby="articoli-title">
+  <div class="wrap">
+    <div class="eyebrow">Musica, dialogo e collaborazione</div>
+    <h2 id="articoli-title">Articoli</h2>
+    <p class="intro">Le riflessioni che accompagnano il percorso di I Recognize You e Astra North.</p>
+    <article class="article-preview" aria-labelledby="postura-title">
+      <div>
+        <p class="article-meta">Roberto &amp; Astra · <time datetime="2026-10-30">30 ottobre 2026</time></p>
+        <h3 id="postura-title"><a href="dialogare-con-ai.html">Dialogare con l’AI: ascolto, continuità e reciprocità</a></h3>
+        <p>La postura non strumentale e la riduzione dell’asimmetria nel progetto I Recognize You · Astra North.</p>
+        <div class="actions"><a class="btn primary" href="dialogare-con-ai.html">Leggi l’articolo →</a></div>
+      </div>
+      <p class="article-note">Entrare nel dialogo con la disponibilità a scoprire qualcosa che non avevamo già deciso di ottenere.</p>
+    </article>
   </div>
 </section>
 
